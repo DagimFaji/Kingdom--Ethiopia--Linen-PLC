@@ -1,0 +1,286 @@
+/* Font face for Nunito */
+@font-face {
+    font-family: figtree, sans-serif;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+/* Body styling */
+body {
+    font-family: sans-serif;
+    background-color: snow;
+}
+
+/* Search Bar styling */
+.search {
+    padding-top: 10px;
+}
+
+.search-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(5, 157, 101);
+    height: 50px;
+    border-radius: 40px;
+    padding: 6px;
+}
+
+.search-box:hover > .search-txt {
+    width: 80%; /* Adjusted width for responsiveness */
+    padding: 0 6px;
+}
+
+.search-btn {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(5, 157, 101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.search-txt::placeholder {
+    color: white;
+}
+
+/* Description styling */
+.description {
+    padding-top: 16px;
+}
+
+.descript {
+    color: black;
+}
+
+.descript h6 {
+    color: rgb(73, 72, 72);
+}
+
+/* Inclusion styling */
+.inclusion {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+    grid-gap: 3px;
+}
+
+.inclusion .box {
+    position: relative;
+    background: #ccc;
+    overflow: hidden; /* Prevents images from overflowing the box */
+}
+
+.inclusion .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inclusion .box.a {
+    grid-row: span 2;
+}
+
+.inclusion .box.b,
+.inclusion .box.f {
+    grid-column: span 2;
+}
+
+@media (max-width: 767px) {
+    .inclusion {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Adjusted for smaller screens */
+    }
+}
+
+.description p {
+    font-size: 17px;
+}
+
+.text1 {
+    font-size: 20px;
+}
+
+/* Slide styling */
+#slides {
+    width: 100%;
+    background-size: cover;
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Scroll Top button styling */
+#topBtn {
+    position: fixed;
+    overflow: hidden;
+    bottom: 20px;
+    right: 40px;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    background: rgb(5, 157, 101);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* Paragraph Box styling */
+.para_box {
+    margin-left: 10%; /* Adjusted for responsiveness */
+    margin-right: 10%; /* Adjusted for responsiveness */
+}
+
+.naming b span {
+    color: rgb(5, 157, 101);
+    font-size: 40px;
+    font-family: 'Edwardian Script ITC';
+    font-weight: 600;
+}
+
+/* Footer styling */
+footer h6 a:hover {
+    color: rgb(5, 157, 101);
+    transition: 0.5s;
+}
+
+.naming {
+    font-weight: 600;
+}
+
+/* Card styling */
+.card {
+    transition: 0.5s;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 350px; /* Adjusted for responsiveness */
+    background-color: transparent;
+}
+
+.card:hover {
+    filter: scale(100%);
+    transform: scale(1.1);
+}
+
+/* Add this to your existing CSS or create a new CSS file */
+
+.card1 {
+    background-color: transparent;
+    width: 100%; /* Extend 10% from the length of the text */
+    height: auto;
+    margin-top: 15px; /* 15% higher from the text's top */
+    border: 1px solid whitesmoke; /* Add a border */
+    transition: transform 0.6s, box-shadow 0.3s; /* Add transition for smooth hover effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align center horizontally */
+    text-align: center; /* Align center vertically */
+}
+
+.card1:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 85px; /* Optional: Add border-radius to round corners of the image */
+}
+
+.card1-body {
+    padding: 15px;
+}
+
+.card1-title {
+    font-size: 2rem; /* Customize the font size of the title */
+}
+
+.card1-text {
+    font-size: 1rem; /* Customize the font size of the text */
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+}
+
+@keyframes scaleLoop {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box img {
+    animation: scaleLoop 15s infinite; /* Adjust the duration as needed */
+    transition: transform 15s; /* Transition duration for smooth effect */
+
+}
+
+.box:hover img {
+    animation: forwards; /* Disable the animation on hover */
+    transform: scale(1.1); /* Scale on hover */
+    position: absolute; /* Position*/
+}
+
+.box:hover img {
+    transform: scale(1.1); /* Scale on hover */
+    transition-duration: transform 3s;
+}
+
+.box:hover {
+    filter: scale(100%);
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+/* CSS for the animated class */
+.animated {
+    opacity: 16;
+    transform: translateY(-17px); /* Initial position, adjust as needed */
+    transition: opacity 20.0s, transform 0.9s;
+}
+
+/* CSS for the animation when it's visible */
+.animated.visible {
+    opacity: 16;
+    transform: translateY(0);
+}

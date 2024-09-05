@@ -1,0 +1,177 @@
+.contact-title
+{
+     margin-top: 100px;
+     color: #fff;
+     text-transform: uppercase;
+     transition: all 4s ease-in-out;
+}
+
+form
+{
+     margin-top: 50px;
+     transition: all 4s ease-in-out;
+}
+
+.form-control
+{
+     width: 200px;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid gray;
+     color: #650df3;
+     font-size: 18px;
+     margin-bottom: 20px;
+}
+
+input
+{
+     height: 45px;
+     color: #650df3
+}
+
+form .submit
+{
+     background: rgb(5, 157, 101);
+     border-color: transparent;
+     color: #fff;
+     font-size: 20px;
+     font-weight: bold;
+     letter-spacing: 2px;
+     height: 50px;
+     margin-top: 10px;
+
+}
+
+.main-agileinfo {
+     width: 40%;
+     margin: 3em auto;
+     background: rgba(0, 0, 0, 0.18);
+     background-size: cover;
+     background-color: #0c8fd821;
+}
+
+   
+
+   .agileits-top {
+     padding: 3em;
+   }
+   
+
+form .submit:hover
+{
+     background-color: rgb(5, 157, 101);
+     cursor: pointer;
+}
+body{
+     
+     background-size: cover;
+ }
+     
+
+        .contact-title
+{
+     margin-top: 100px;
+     color: #fff;
+     text-transform: uppercase;
+     transition: all 4s ease-in-out;
+}
+
+form
+{
+     margin-top: 50px;
+     transition: all 4s ease-in-out;
+}
+
+.form-control
+{
+     width: 400px;
+     background: transparent;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid gray;
+     color: #fff;
+     font-size: 18px;
+     margin-bottom: 20px;
+    /* margin-left: 475px;*/
+     
+    
+
+}
+
+.control-label
+{
+     width: 400px;
+     background: transparent;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid gray;
+     color: #fff;
+     font-size: 18px;
+     margin-bottom: 16px;
+     margin-left: 7px;
+     
+    
+
+}
+.p{
+     text-align: justify;
+}
+
+.border0{
+    border: 0;
+}
+
+.input80
+{
+     width: 200px;
+     background: transparent;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid gray;
+     color: #fff;
+     font-size: 18px;
+     margin-bottom: 16px;
+     margin-left: 675px;
+     
+    
+
+}
+.form-control {
+    color: #650df3;
+}
+.control-label {
+    color: gray;
+}
+
+input
+{
+     height: 45px;
+}
+
+form .submit
+{
+     background: transparent;
+     border: rgb(5, 157, 101) solid 3px;
+     border-radius: 20px;
+     color: rgb(5, 157, 101);
+     font-size: 20px;
+     font-weight: bold;
+     letter-spacing: 2px;
+     height: 50px;
+     margin-top: 20px;
+     width: 373px;
+
+}
+
+form .submit:hover
+{
+     background: rgb(5, 157, 101);
+     border-radius: 20px;
+     cursor: pointer;
+     color: white;
+     transition: .4s;
+}
+
+
+
+

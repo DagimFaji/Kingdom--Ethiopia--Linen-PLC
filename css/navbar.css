@@ -1,0 +1,79 @@
+/* Reset and base styles */
+@font-face {
+    font-family: Nunito-family;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Nunito-family";
+}
+
+a {
+    text-decoration: none;
+    color: rgb(5, 190, 36);
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0));
+    background-size: cover;
+}
+
+.content1 {
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.brand {
+    font-size: 2px;
+    font-weight: 900;
+    transform: translateX(-1000rem);
+    animation: slideIn .5s forwards;
+}
+
+.brand:hover {
+    transform: translateX(-1000rem);
+    animation: slideIn .5s forwards;
+}
+
+.brand img {
+    width: 90px;
+    height: 70px;
+}
+
+span {
+    color: rgb(5, 157, 101);
+    font-size: 80px;
+    font-family: 'Arial';
+}
+
+.brand span {
+    color: rgb(5, 157, 101);
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+

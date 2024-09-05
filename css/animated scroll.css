@@ -1,0 +1,12 @@
+/* CSS for the animated class */
+.animated {
+    opacity: 16;
+    transform: translateY(9px); /* Initial position, adjust as needed */
+    transition: opacity 20.0s, transform 0.9s;
+}
+
+/* CSS for the animation when it's visible */
+.animated.visible {
+    opacity: 16;
+    transform: translateY(0);
+}

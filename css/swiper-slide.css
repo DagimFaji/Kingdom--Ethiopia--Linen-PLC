@@ -1,0 +1,20 @@
+.swiper-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 600px; /* Ensure the slide doesn't exceed the container's width */
+  height: 350px;
+  background:none;
+}
+
+.swiper-slide img {
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+}

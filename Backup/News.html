@@ -1,0 +1,180 @@
+Certainly! Here's your HTML with the jQuery script added for dynamically loading detailed content on the same page:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="css/img/Kingdom pics/logo (2).png" style="width: 200px; height: 120px;">
+    <title>News KINGDOM ETHIOPIA LINEN PLC</title>
+
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/excursionPage.css">
+    <link rel="stylesheet" href="css/customStyle.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/navbarForOthers.css">
+    <link rel="stylesheet" href="css/global_variables.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <div>
+        <nav class="navbar shadow-lg navbar-expand-md navbar-light navbar navbar-light navbar-1 white">
+            <div class="container-fluid">
+                <a href="Home Page.html" class="navbar-brand"><img src="css/img/Kingdom pics/logo (2).png" style="width: 70px; height: 65px;"><b><span style="font-size:  18px; font-family: Arial, Helvetica, sans-serif;">KINGDOM ETHIOPIA Linen PLC</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home Page.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Ourproducts.html">Our Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Sustainability.html">Sustainability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="News.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUsss.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Ends Navbar -->
+    <!-- Breadscrumb -->
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb shadow">
+                <li class="breadcrumb-item directLink"><b><a href="Home Page.html" style="color: black;">Home</a></b></li>
+                <li class="breadcrumb-item directLink" aria-current="page">News</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- End of breadscrumb  -->
+
+    <!-- Content of Excursion -->
+    <div class="text-center topic">
+        <h1>News</h1>
+    </div>
+    <div class="text-center" style="padding-top:5rem ;">
+        <h2 class="text-style"><b>Our Latest News</b></h2>
+        
+    </div>
+</div>  
+<section class="booking-area text-center">
+    <hr class="line-black">
+        <div class="row text-center" style="padding-left: -2px; padding-top:8rem;">
+
+            <div class="card" style="width: 22rem;">
+                <img src="css/img/Kingdom pics/Image_20240127112959-holiday.jpg" class="shadow rounded" alt="">
+                <div class="card-body">
+                    <h5 class="class-title"><b>Ethiopian Christmass</b></h5>
+                    <p class="card-text">
+                        Kingdom Ethiopia Celebrated 2024's Ethiopian Christmass Holiday.
+                    </p>
+                    <a href="#" class="btn btn-outline-green btn-md float-left read-more-btn" data-news-id="1">Read More</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 22rem;">
+                <img src="css/img/Kingdom pics/New Year Message Cover.png" class="shadow rounded" alt="">
+                <div class="card-body">
+                    <h5 class="class-title"><b>New Year</b></h5>
+                    <p class="card-text">
+                        KINGDOM's NEW YEAR MESSAGE 2024.
+                    </p>
+                    <a href="#" class="btn btn-outline-green btn-md float-left read-more-btn" data-news-id="2">Read More</a>
+                </div>
+            </div>
+
+            <!-- Add more news cards as needed, each with a unique data-news-id -->
+
+        </div>
+    </section>
+    <hr class="line-black">
+
+    <!-- End of content of excursion -->
+
+    <!-- Start of Footer -->
+    <div>
+        <footer class="row text-center">
+            <hr class="line-white">
+            <div class="col-12">
+                <h3>&copy; KINGDOM ETHIOPIA LINEN PLC</h3>
+                <h6>Email: <a href="#">shenyf@kingdom-china.com</a></h6>
+                <h6>Tel: +251 962099918</h6>
+                <h6>Oromia Region, Adama,
+                    Adama Industrial Park</h6>
+                <h6>ETHIOPIA.</h6>
+            </div>
+            <hr class="line-white">
+        </footer>
+    </div>
+    <!-- End of Footer --> 
+
+    <!-- Scroll Top starts here -->
+    <div>
+        <button class="shadow-lg" id="topBtn"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <!-- Scroll top ends here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Sample news data (replace with your actual data)
+            const newsData = [
+                { id: 1, title: "Ethiopian Christmass", content: "Kingdom Ethiopia Celebrated 2024's Ethiopian Christmass Holiday." },
+                { id: 2, title: "New Year", content: "KINGDOM's NEW YEAR MESSAGE 2024." },
+                // Add more news items as needed
+            ];
+
+
+
+            // Function to dynamically load detailed content
+            function loadDetailedContent(newsId) {
+                const selectedNews = newsData.find(news => news.id === newsId);
+
+                if (selectedNews) {
+                    // Update the detailed content on the page
+                    const detailedContent = `
+                        <div class="text-center">
+                            <h2>${selectedNews.title}</h2>
+                            <p>${selectedNews.content}</p>
+                        </div>
+                    `;
+                    $('.booking-area').html(detailedContent);
+                }
+            }
+
+            // Click event for "Read More" button
+            $('.read-more-btn').on('click', function(event) {
+                event.preventDefault(); // Prevent the default behavior of the anchor tag
+                const newsId = $(this).data('news-id');
+                loadDetailedContent(newsId);
+            });
+        });
+    </script>
+
+    <script src="js/all.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/CutomizedJS.js"></script>    
+</body>
+</html>

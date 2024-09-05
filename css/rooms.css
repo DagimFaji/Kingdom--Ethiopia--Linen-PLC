@@ -1,0 +1,156 @@
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#262626;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+    background:#262626;
+  }
+
+  .swiper-slide img{
+    width: 600px; 
+    height: 350px;
+  }
+
+  /* Footer */
+
+footer{
+  font-family: 'Nunito';
+  font-size: 17px;
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 0.5rem;
+}
+
+footer h6 a:hover {
+  color: crimson;
+  transition: 0.5s;
+}
+
+.footer_img1 img{
+  width: 250px;
+  height: 70px;
+}
+
+.footer_img2 img{
+  width: 130px;
+  height: 120px;
+}
+/*  */
+
+p{
+  font-family: "Nunito";
+  font-size: 17px;
+}
+
+/* span{
+  color: crimson;
+  font-size: 80px;
+  font-family: 'Edwardian Script ITC';
+} */
+
+.brand span{
+  color: crimson;
+  font-size: 50px;
+  font-family: 'Brush Script MT';
+}
+
+.topic h1 span b{
+  color: crimson;
+  font-size: 80px;
+  font-family: 'Edwardian Script ITC';
+  font-weight: 600;
+}
+
+.topic h1{
+  font-family: "Nunito";
+  font-size: 49px;
+  font-weight: 300;
+}
+
+p b{
+  font-family: "Nunito";
+  font-size: 19px;
+}
+
+.sub_topic1{
+  font-family: "Nunito";
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* Horizontal Line */
+
+.line-white{
+  background: white;
+  border: solid white 1px;
+  border-radius: 50%;
+  width: 75%;
+}
+
+.line-black{
+  background: rgb(15, 15, 15);
+  border: solid rgb(15, 15, 15) 2px;
+  border-radius: 50%;
+  width: 75%;
+}
+
+
+/* End of Horizontal Line */
+
+/* Custom Scroll Bar */
+
+::-webkit-scrollbar{
+  width: 9px;
+  border-radius: 5px;
+  background: rgb(36, 35, 35);
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(36, 35, 35);
+  border-radius: 5px;
+  border: solid crimson  5px;
+}
+
+/* #ffc72c */
+
+
+/* End of Custom Scroll Bar */
+
+/* Scroll Top button (topBtn) */
+
+#topBtn {
+  position: fixed;
+  overflow: hidden;
+  bottom: 20px;
+  right: 40px;
+  font-size: 32px;
+  width: 60px;
+  height: 60px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+/*  */
+
+.para_box {
+  margin-left: 150px;
+  margin-right: 150px;
+}

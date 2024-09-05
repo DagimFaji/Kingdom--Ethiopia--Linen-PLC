@@ -1,0 +1,151 @@
+@font-face{
+    font-family: Nunito-family;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Nunito-family";
+}
+
+p{
+    font-size: 17px;
+}
+
+.mContent img{
+    /* top: 50%;
+    left: 50%;
+    padding-top: 14%;
+    margin-left: 30%; */
+    margin-top: 6%;
+    width: 400px;
+}
+
+.topic h1 span{
+    color: rgb(5, 157, 101);
+    font-size: 80px;
+    font-family: 'Edwardian Script ITC';
+}
+
+.brand span{
+    color: rgb(5, 157, 101);
+    font-size: 50px;
+    font-family: 'Brush Script MT';
+}
+
+p b{
+    font-size: 19px;
+}
+
+.sub_topic1{
+    font-size: 19px;
+}
+
+/* Footer */
+
+footer{
+    font-family: "Nunito-family";
+    font-size: 17px;
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 0.5rem;
+}
+
+footer h6 a:hover {
+    color: rgb(5, 157, 101);
+    transition: 0.5s;
+  }
+
+.footer_img1 img{
+    width: 250px;
+    height: 70px;
+}
+
+.footer_img2 img{
+    width: 130px;
+    height: 120px;
+}
+/*  */
+
+/* Horizontal Line */
+
+.line-white{
+    background: white;
+    border: solid white 1px;
+    border-radius: 50%;
+    width: 75%;
+}
+
+.line-black{
+    background: rgb(15, 15, 15);
+    border: solid rgb(15, 15, 15) 2px;
+    border-radius: 50%;
+    width: 75%;
+}
+
+.line-crimson {
+    border: 2px solid rgb(5, 157, 101);
+    border-radius: 50%;
+}
+
+/* End of Horizontal Line */
+
+
+/* Services Box */
+
+/* .services-box{
+padding-left: 70px;
+padding-right: 70px;
+} */
+
+/*  */
+
+/* text-style */
+
+.text-style span{
+    color: rgb(5, 157, 101);
+    font-weight: 600;
+    font-size: 49px;
+}
+
+/*  */
+
+/* Scroll Top button (topBtn) */
+
+#topBtn {
+    position: fixed;
+    overflow: hidden;
+    bottom: 20px;
+    right: 40px;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    background: rgb(5, 157, 101);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/*  */
+
+.para_box {
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 17px;
+    color: black;
+    /* 168px */
+}
+
+.para_box_left {
+    margin-left: 140px;
+    color: black;
+    font-size: 17px;
+}
+
+.para_box_right {
+    margin-right: 140px;
+    color: black;
+    font-size: 17px;
+}

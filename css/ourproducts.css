@@ -1,0 +1,328 @@
+/* Default styles */
+
+body {
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 18px;
+}
+
+.mContent img {
+    margin-top: 1%;
+    width: 400px;
+}
+
+.topic h1 span {
+    color: rgb(5, 157, 101);
+    font-size: 80px;
+    font-family: 'arial', serif;
+}
+
+.brand span {
+    color: rgb(5, 157, 101);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p b {
+    font-size: 19px;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight:500;
+}
+
+.sub_topic1{
+    font-size: 19px;
+    font-weight: 1000;
+}
+.paraspan{
+    color: rgb(5, 157, 101);  
+    font-weight: bolder;
+    font-size: 39px;
+}
+
+/* Footer */
+
+footer {
+    font-size: 17px;
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 0.5rem;
+}
+
+footer h6 a:hover {
+    color: rgb(5, 157, 101);
+    transition: 0.5s;
+}
+
+.footer_img1 img {
+    width: 250px;
+    height: 70px;
+}
+
+.footer_img2 img {
+    width: 130px;
+    height: 120px;
+}
+
+/* Horizontal Line */
+
+.line-white {
+    background: white;
+    border: solid white 1px;
+    border-radius: 50%;
+    width: 75%;
+}
+
+.line-black {
+    background: rgb(15, 15, 15);
+    border: solid rgb(15, 15, 15) 2px;
+    border-radius: 50%;
+    width: 75%;
+}
+
+/* Custom Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 9px;
+    border-radius: 5px;
+    background: rgb(36, 35, 35);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 35, 35);
+    border-radius: 5px;
+    border: solid rgb(5, 157, 101) 5px;
+}
+
+/* Scroll Top button (topBtn) */
+
+#topBtn {
+    position: fixed;
+    overflow: hidden;
+    bottom: 20px;
+    right: 40px;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    background: rgb(5, 157, 101);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/* Paragraph Box styling */
+
+.para_box {
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+.acco {
+    margin-left: 14.25%;
+}
+
+/* Hover effect for images */
+
+.containers {
+    position: relative;
+    width: 10%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.containers:hover .image {
+    opacity: 0.3;
+}
+
+.containers:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    font-size: 40px;
+    font-weight: bolder;
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.text:hover .word:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.0s;
+}
+
+.text:hover .word:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s;
+}
+
+.text:hover .word:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
+}
+
+.text:hover .word:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.9s;
+}
+
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+    .mContent img {
+        width: 300px;
+    }
+
+    .brand span {
+        font-size: 40px;
+    }
+
+    .topic h1 span {
+        font-size: 60px;
+    }
+
+    p b {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .sub_topic1 {
+        font-size: 16px;
+    }
+
+    .paraspan {
+        font-size: 26px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .breadcrumb {
+        font-size: 14px;
+    }
+
+    .line-white,
+    .line-black {
+        width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .brand span {
+        font-size: 30px;
+    }
+
+    .topic h1 span {
+        font-size: 50px;
+    }
+
+    .paraspan {
+        font-size: 22px;
+    }
+
+    .line-white,
+    .line-black {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand span {
+        font-size: 20px;
+    }
+
+    .topic h1 span {
+        font-size: 40px;
+    }
+
+    .paraspan {
+        font-size: 18px;
+    }
+
+    .line-white,
+    .line-black {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand span {
+        font-size: 18px;
+    }
+
+    .topic h1 span {
+        font-size: 30px;
+    }
+
+    .paraspan {
+        font-size: 16px;
+    }
+
+    .line-white,
+    .line-black {
+        width: 90%;
+    }
+
+    .footer_img1 img {
+        width: 100px;
+        height: 30px;
+    }
+
+    .footer_img2 img {
+        width: 60px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .topic h1 {
+        font-size: 30px;
+    }
+
+    .paraspan {
+        font-size: 14px;
+    }
+}

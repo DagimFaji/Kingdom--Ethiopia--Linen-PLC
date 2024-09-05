@@ -1,0 +1,8 @@
+@font-face{
+    font-family: figtree-regular;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+body{
+    font-family: "figtree-regular";
+}

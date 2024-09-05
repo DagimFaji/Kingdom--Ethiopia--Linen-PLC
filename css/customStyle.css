@@ -1,0 +1,148 @@
+/* Font Face */
+@font-face {
+    font-family: Nunito-family;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+body {
+    font-family: "Nunito-family";
+}
+
+/* Booking Area */
+.booking-area {
+    padding: 10px;
+    background: rgb(252, 252, 252);
+    color: black;
+}
+
+.booking-area .row .card {
+    color: black;
+    margin: 20px;
+    top: 50%;
+    left: 2%;
+}
+
+.booking-area .row .card img {
+    width: 100%;
+    height: 160px;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 9px;
+    border-radius: 5px;
+    background: rgb(36, 35, 35);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 35, 35);
+    border-radius: 5px;
+    border: solid rgb(5, 157, 101) 5px;
+}
+
+/* Horizontal Line */
+.line-white {
+    background: black;
+    border: solid black 1px;
+    border-radius: 50%;
+    width: 90%;
+}
+
+.line-black {
+    background: rgb(15, 15, 15);
+    border: solid rgb(15, 15, 15) 2px;
+    border-radius: 50%;
+    width: 75%;
+}
+
+/* Image of the Card */
+.image img {
+    width: 100%;
+    height: auto; /* Adjusted for responsiveness */
+}
+
+/* Logo */
+.mContent img {
+    margin-top: 6%;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 400px; /* Added max-width for responsiveness */
+    height: auto;
+}
+
+/* Footer */
+footer {
+    font-size: 17px;
+    background-color: snow;
+    color: black;
+    padding-top: 0.5rem;
+    font-weight: bolder;
+    text-align: center; /* Center-align text in the footer */
+}
+
+.footer_img1 img {
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 250px; /* Added max-width for responsiveness */
+    height: auto;
+}
+
+.footer_img2 img {
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 130px; /* Added max-width for responsiveness */
+    height: auto;
+}
+
+/* General Text Styles */
+p {
+    font-size: 18px;
+}
+
+span {
+    color: rgb(5, 157, 101);
+    font-size: 80px;
+    font-family: 'Edwardian Script ITC';
+}
+
+.brand a span b {
+    color: rgb(5, 157, 101);
+    font-size: 50px;
+    font-family: 'Edwardian Script ITC';
+    font-weight: 1000;
+}
+
+h1 {
+    font-size: 49px;
+    font-weight: 600;
+}
+
+/* Facilities Section */
+.facilities {
+    margin-left: 25%;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    /* Add responsive styles for smaller screens here */
+    .mContent img {
+        margin-top: 6%;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .footer_img1 img {
+        max-width: 150px;
+    }
+
+    .footer_img2 img {
+        max-width: 80px;
+    }
+
+    .facilities {
+        margin-left: 0;
+        width: 100%;
+    }
+}

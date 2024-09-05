@@ -1,0 +1,395 @@
+body{
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 18px;
+}
+
+.mContent img{
+    /* top: 50%;
+    left: 50%;
+    padding-top: 14%;
+    margin-left: 30%; */
+    margin-top: 1%;
+    width: 400px;
+}
+
+.topic h1 span{
+    color: rgb(5, 157, 101);
+    font-size: 80px;
+    font-family: 'Edwardian Script ITC';
+}
+
+.brand span{
+    color: rgb(5, 157, 101);
+    font-size: 50px;
+    font-family: 'Brush Script MT';
+}
+
+p b{
+    font-size: 19px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.sub_topic1{
+    font-size: 19px;
+}
+
+/* Footer */
+
+footer{
+    font-size: 17px;
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 0.5rem;
+}
+
+footer h6 a:hover {
+    color: rgb(5, 157, 101);
+    transition: 0.5s;
+}
+
+.footer_img1 img{
+    width: 250px;
+    height: 70px;
+}
+
+.footer_img2 img{
+    width: 130px;
+    height: 120px;
+}
+/*  */
+
+/* Horizontal Line */
+
+.line-white{
+    background: white;
+    border: solid white 1px;
+    border-radius: 50%;
+    width: 75%;
+}
+
+.line-black{
+    background: rgb(15, 15, 15);
+    border: solid rgb(15, 15, 15) 2px;
+    border-radius: 50%;
+    width: 75%;
+}
+
+/* Vertical Line */
+.line-vertical {
+  position: relative !important;
+  border:solid 1px;
+  text-align: center;
+  width:0px;
+  margin-left: 50%;
+  height: 100px;
+  color: #9f9999;
+}
+
+/* End of Horizontal Line */
+
+  /* Custom Scroll Bar */
+  
+  ::-webkit-scrollbar{
+    width: 9px;
+    border-radius: 5px;
+    background: rgb(36, 35, 35);
+  
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: rgb(36, 35, 35);
+    border-radius: 5px;
+    border: solid rgb(5, 157, 101)  5px;
+  }
+  
+  /* #ffc72c */
+  
+  
+  /* End of Custom Scroll Bar */
+
+  /* Scroll Top button (topBtn) */
+
+#topBtn {
+    position: fixed;
+    overflow: hidden;
+    bottom: 20px;
+    right: 40px;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    background: rgb(5, 157, 101);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+/*  */
+
+.para_box {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.title{
+    font-size:40px;
+    position: relative;
+    font-family: figtree, sans-serif;
+    color: #2E2D2C;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.title4{
+    font-size:40px;
+    font-family: figtree, sans-serif;
+    color: #2E2D2C;
+    font-weight: bold;
+  padding-top: 5%;
+}
+.image img {
+    
+    display: inline-block;
+    width: 100%;
+    height: 470px;
+    position: relative;
+    background: #3f3f3f;
+    filter: blur(1.5px);
+}
+
+.image2 img {
+    
+    display: inline-block;
+    width: 100%;
+    height: 470px;
+    position: relative;
+    background: #3f3f3f;
+    
+}
+.circularimg{
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    border-radius: 60%; /* Make the image circular */
+    object-fit:fill; /* Maintain the aspect ratio and cover the container */
+}
+
+.historyimg{
+    position: relative;
+    width: 25%;
+    height: 10%;
+    border-radius: 10%; /* Make the image circular */
+    object-fit:fill; /* Maintain the aspect ratio and cover the container */
+}
+.overlay-text{
+    position: absolute !important;
+    text-align: center;
+    font-family: figtree,sans-serif;
+    color:lightgoldenrodyellow !important;;
+}
+.overlay-text2{
+    position: absolute !important;
+    text-align: center;
+    font-family: figtree,sans-serif;
+    color:antiquewhite !important;
+    font: bold;
+}
+
+.section1{
+    align-items: center;
+    justify-content: center !important;
+    text-align: center;
+    padding-top: 8em;
+    padding-right: calc(8.33333%);
+    padding-bottom: 8em;
+    padding-left: calc(8.33333%);
+    background-color:aliceblue !important;
+}
+
+.section2{
+    display:flow-root;
+    background-color:beige !important;
+}
+
+.section3{
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:linen !important;
+}
+
+.section4{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color:mintcream !important;
+}
+
+.text{
+    font: 22px figtree,sans-serif;
+    line-height: 1.4;
+    margin: 22px,0,0,0;
+}
+
+.text1{
+    font: 22px figtree,sans-serif;
+    align-items: center,justify;
+    display: block;
+    margin-top: 3%;
+}
+
+.text2{
+    font:17px figtree,sans-serif;
+    line-height: 1.5;
+    margin-top: 14px;
+    max-width: 610px;
+    text-align: justify;
+    
+}
+    /* CSS for the animated class */
+.animated {
+    opacity: 16;
+    transform: translateY(-5px); /* Initial position, adjust as needed */
+    transition: opacity 20.0s, transform 0.9s;
+}
+
+/* CSS for the animation when it's visible */
+.animated.visible {
+    opacity: 16;
+    transform: translateY(0);
+}
+
+/* CSS for history part*/
+
+.history-item {
+    overflow: hidden;
+    cursor: pointer; /* Add cursor pointer on hover */
+    object-fit: cover;
+}
+
+.historyimg{
+    border-radius: 5%;
+    width:30%;
+}
+
+.image-description p{
+    font: figtree,sans-serif bold 15px !important;
+}
+
+.image-description {
+    position: relative !important;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1.2s ease-in-out;
+
+}
+
+.history-item:hover .historyimg {
+    filter: blur(2px) ;
+    transform:scale(70%);
+    transition: linear 2.8s;
+}
+.history-item:hover .title4{
+    color: rgb(158, 136, 13) !important;
+    transform: scale(100%);
+    transition: linear 2.8s;
+}
+.history-item:hover .image-description {
+    opacity: 1; /* Make the description visible on hover */
+    color:rgb(158, 136, 13) ;
+    font-weight: bolder;
+    transition: linear 2.8s;
+}
+
+.history-item:hover .line-vertical{
+    color:rgb(239, 204, 5) ;
+    transition: linear 2.8s;
+}
+
+
+
+
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .para_box {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .overlay-text,
+    .overlay-text2 {
+        font-size: 14px;
+    }
+
+    .history-item {
+        margin-bottom: 20px;
+    }
+
+    .historyimg {
+        width: 100%;
+    }
+
+    .circularimg {
+        width: 50%;
+        height: 50%;
+    }
+
+    .section1,
+    .section2,
+    .section3,
+    .section4 {
+        padding-top: 4em;
+        padding-right: 5%;
+        padding-bottom: 4em;
+        padding-left: 5%;
+    }
+}
+
+/* Small devices (landscape phones) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .para_box {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .overlay-text,
+    .overlay-text2 {
+        font-size: 16px;
+    }
+
+    .circularimg {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Add your styles for medium devices here */
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 993px) {
+    /* Add your styles for large devices here */
+}
